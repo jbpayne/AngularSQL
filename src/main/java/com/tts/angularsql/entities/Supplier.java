@@ -18,7 +18,7 @@ public class Supplier {
     public Supplier() {
 
     }
-    
+
     public Supplier(int supplierId, String supplierName) {
         this.supplierId = supplierId;
         this.supplierName = supplierName;
@@ -52,6 +52,14 @@ public class Supplier {
     @Override
     public int hashCode() {
         return Objects.hash(supplierId, supplierName);
+    }
+
+    @Override
+    public String toString() {
+        return "Supplier{" +
+                "supplierId=" + supplierId +
+                ", supplierName='" + supplierName + '\'' +
+                '}';
     }
 }
 
