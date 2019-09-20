@@ -1,6 +1,11 @@
 HELP.md
 .gradle
-src/main/resources/application.properties
+#src/main/resources/application.properties
+app.js
+bin/
+dashboard.css
+dashboard.html
+lease.html
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
