@@ -7,13 +7,14 @@ import java.util.Objects;
 @Table(name = "products")
 public class Product {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
     @Column(name = "productname")
     private String productName;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="category")
     private Category category;
 
@@ -24,20 +25,20 @@ public class Product {
     private double salePrice;
 
     @Column(name = "availability")
-    private int availability;
+    private boolean availability;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "supplier")
     private Supplier supplier;
 
     public Product() {}
 
-    public Product(int id, String productName, Category category, double fullPrice, double salePrice, int availability, Supplier supplier) {
-        this.id = id;
+    public Product(String productName, Category category, double fullPrice, double salePrice, boolean availability, Supplier supplier) {
         this.productName = productName;
         this.category = category;
-        this.fullPrice = fullPrice;
-        this.salePrice = salePrice;
+        this.fullPrice = fullPrice > salePrice ? fullPrice : salePrice;
+        System.out.println(this.fullPrice);
+        this.salePrice = salePrice < fullPrice ? salePrice : fullPrice;
         this.availability = availability;
         this.supplier = supplier;
     }
@@ -82,11 +83,11 @@ public class Product {
         this.salePrice = salePrice;
     }
 
-    public int getAvailability() {
+    public boolean isAvailability() {
         return availability;
     }
 
-    public void setAvailability(int availability) {
+    public void setAvailability(boolean availability) {
         this.availability = availability;
     }
 

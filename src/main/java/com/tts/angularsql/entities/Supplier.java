@@ -19,8 +19,7 @@ public class Supplier {
 
     }
 
-    public Supplier(int supplierId, String supplierName) {
-        this.supplierId = supplierId;
+    public Supplier(String supplierName) {
         this.supplierName = supplierName;
     }
 

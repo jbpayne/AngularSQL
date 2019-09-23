@@ -1,7 +1,6 @@
 HELP.md
 .gradle
-#src/main/resources/application.properties
-app.js
+src/main/resources/application.properties
 bin/
 dashboard.css
 dashboard.html
