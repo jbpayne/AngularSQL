@@ -1,5 +1,5 @@
-const targetUrl = 'https://tts-dashboard.herokuapp.com';
-// const targetUrl = 'http://localhost:8080';
+// const targetUrl = 'https://tts-dashboard.herokuapp.com';
+const targetUrl = 'http://localhost:8080';
 
 const myQueue = document.getElementById("queueContent");
 myQueue.innerHTML = `<div><button class="btn btn-success" onclick="viewProduct({}, myQueue)">Add New Product</button></div>`;
