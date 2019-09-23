@@ -1,6 +1,6 @@
-# Angular SQL Project For TTS
+# TTS Dashboard Project
 
-This is a CRUD app with Angular front end and Java/Spring/SQL REST back end.  
+This is a dashboard app with Angular front end connecting through REST API to Java/Spring/SQL back end.  
   
 ### Demo  
   
@@ -14,7 +14,7 @@ Angular front end: [https://jbpayne.github.io/TTS-DashboardProject](https://jbpa
 Run with:
 
 ```bash
-java -jar angularsql.jar
+java -jar tts-dashboardproject.jar
 ```
 
 
@@ -24,4 +24,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://github.com/jbpayne/AngularSQL/blob/master/LICENSE)
+[MIT](https://github.com/jbpayne/TTS-DashboardProject/blob/master/LICENSE)
