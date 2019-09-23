@@ -42,7 +42,7 @@ const populateLine = (product) => {
 }
 
 (async () => {
-  const productJSON = await fetch(`${targetUrl}/products?size=10&page=34`);
+  const productJSON = await fetch(`${targetUrl}/products?size=10&page=0`);
   const productData = await productJSON.json();
   const productArray = await productData._embedded.products;
   for (let product in productArray) {
