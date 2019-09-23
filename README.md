@@ -4,9 +4,9 @@ This is a CRUD app with Angular front end and Java/Spring/SQL REST back end.
   
 ### Demo  
   
-REST browser: [https://angular-sql.herokuapp.com/](https://angular-sql.herokuapp.com/)  
+REST browser: [https://tts-dashboard.herokuapp.com/](https://tts-dashboard.herokuapp.com/)  
 
-Angular front end: [https://jbpayne.github.io/AngularSQL](https://jbpayne.github.io/AngularSQL)
+Angular front end: [https://jbpayne.github.io/TTS-DashboardProject](https://jbpayne.github.io/TTS-DashboardProject)
 
 
 ## Release
